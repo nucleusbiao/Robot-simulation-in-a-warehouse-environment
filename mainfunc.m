@@ -1,12 +1,12 @@
 close all;
 clear all;
 
-load('data/trajp.mat') % 仓储环境的轨迹点
-load('data/x.mat')    %100个机器人的初始位置
-load('data/storagepoint.mat')   %货架上对应的工作点
-load('data/storagerock.mat')     %货架位置
-load('data/target.mat')          %最终目标点
-load('data/stopp.mat')           %与目标点相对应的，每个机器人站中的停靠点
+load('../data/trajp.mat') % 仓储环境的轨迹点
+load('../data/x.mat')    %100个机器人的初始位置
+load('../data/storagepoint.mat')   %货架上对应的工作点
+load('../data/storagerock.mat')     %货架位置
+load('../data/target.mat')          %最终目标点
+load('../data/stopp.mat')           %与目标点相对应的，每个机器人站中的停靠点
 xpath=zeros(1500,200);%用于存放机器人当前订单的剩余任务
 xstate=zeros(1,100); %用来表示机器人的状态，0 未接受订单 1 正在执行订单
 state=zeros(1,100); %用来判断机器人是否到达任务点，准备执行任务
