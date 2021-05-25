@@ -12,6 +12,6 @@ booktitle={International Conference on Real-time Computing and Robotics},
 year={2021},  
 organization={IEEE}  
 }
-
-Simulation
+<br/>
+Simulation<br/>
 ![](warehouse_robot_anmi.gif)
